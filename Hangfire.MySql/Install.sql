@@ -124,6 +124,7 @@ CREATE TABLE `<tableprefix>_Set` (
   `ExpireAt` datetime DEFAULT NULL,
   PRIMARY KEY (`Id`),
   UNIQUE KEY `IX_Set_Key_Value` (`Key`,`Value`)
+  KEY `IX_Set_Score` (`Key`,`Score`,`Value`)
 ) ENGINE=InnoDB  CHARSET=utf8mb4;
 
 
